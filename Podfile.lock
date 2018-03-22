@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.6.0)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
+  - EVReflection (5.5.5):
+    - EVReflection/Core (= 5.5.5)
+  - EVReflection/Core (5.5.5)
+  - GzipSwift (4.0.4)
+  - RSSelectionMenu (3.2)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - SKActivityIndicatorView (0.1.0)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - EVReflection
+  - GzipSwift
+  - RSSelectionMenu
+  - RxCocoa
+  - RxSwift
+  - SKActivityIndicatorView
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  EVReflection: f5acec65ca5591bcb654743156172e3f2cbf2257
+  GzipSwift: 1a5bc5f7827e09846b0635b5079f1224bc3b1c3a
+  RSSelectionMenu: 9263c19c4b01b0dedf33903ae21a608b469e9b2b
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SKActivityIndicatorView: f46936f760d33eb8235333242269bf01cc9248ae
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 01b2b5da638f1520c72cc797df0e4b4f7a0e0ebe
+
+COCOAPODS: 1.3.1

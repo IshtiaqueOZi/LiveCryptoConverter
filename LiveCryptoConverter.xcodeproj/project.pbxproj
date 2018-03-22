@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57F30230779BFC62A87E7FE3 /* Pods_LiveCryptoConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096535A956FA2191C508C9F0 /* Pods_LiveCryptoConverter.framework */; };
+		D108D5EEA4613B28BFC1C997 /* Pods_LiveCryptoConverterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8979684B7534DB4E86B7C832 /* Pods_LiveCryptoConverterTests.framework */; };
+		D8BA7C1624A3A3B7041D15E4 /* Pods_LiveCryptoConverterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5414F9BF78F4AE2CF0F736 /* Pods_LiveCryptoConverterUITests.framework */; };
+		FA903F2B20406D4F00FB3B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F2A20406D4F00FB3B24 /* AppDelegate.swift */; };
+		FA903F2D20406D4F00FB3B24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F2C20406D4F00FB3B24 /* ViewController.swift */; };
+		FA903F3020406D4F00FB3B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA903F2E20406D4F00FB3B24 /* Main.storyboard */; };
+		FA903F3320406D4F00FB3B24 /* LiveCryptoConverter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA903F3120406D4F00FB3B24 /* LiveCryptoConverter.xcdatamodeld */; };
+		FA903F3520406D4F00FB3B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA903F3420406D4F00FB3B24 /* Assets.xcassets */; };
+		FA903F3820406D4F00FB3B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA903F3620406D4F00FB3B24 /* LaunchScreen.storyboard */; };
+		FA903F4320406D4F00FB3B24 /* LiveCryptoConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F4220406D4F00FB3B24 /* LiveCryptoConverterTests.swift */; };
+		FA903F4E20406D4F00FB3B24 /* LiveCryptoConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F4D20406D4F00FB3B24 /* LiveCryptoConverterUITests.swift */; };
+		FA903F5C2040724000FB3B24 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F5B2040724000FB3B24 /* DataSource.swift */; };
+		FA903F5F20408A9F00FB3B24 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F5D20408A9F00FB3B24 /* CurrencyTableViewCell.swift */; };
+		FA903F6020408A9F00FB3B24 /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA903F5E20408A9F00FB3B24 /* CurrencyTableViewCell.xib */; };
+		FA903F622040A32300FB3B24 /* LiveRatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F612040A32200FB3B24 /* LiveRatesTableViewCell.swift */; };
+		FA903F642040A33700FB3B24 /* LiveRatesHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F632040A33700FB3B24 /* LiveRatesHeaderTableViewCell.swift */; };
+		FA903F662040A4AD00FB3B24 /* LiveRatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F652040A4AD00FB3B24 /* LiveRatesViewController.swift */; };
+		FAB82A772042CEBE0062FCA9 /* CoinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB82A762042CEBE0062FCA9 /* CoinsViewController.swift */; };
+		FAB82A7B2042EDF00062FCA9 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB82A7A2042EDF00062FCA9 /* GoogleMobileAds.framework */; };
+		FAB82A7F204440A10062FCA9 /* CoinsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB82A7E204440A10062FCA9 /* CoinsCollectionViewCell.swift */; };
+		FAB82A8120444B5B0062FCA9 /* LiveCrptoCompareCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB82A8020444B5B0062FCA9 /* LiveCrptoCompareCoreData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA903F3F20406D4F00FB3B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA903F1F20406D4E00FB3B24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA903F2620406D4F00FB3B24;
+			remoteInfo = LiveCryptoConverter;
+		};
+		FA903F4A20406D4F00FB3B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA903F1F20406D4E00FB3B24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA903F2620406D4F00FB3B24;
+			remoteInfo = LiveCryptoConverter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02F4E19BD0D264C15FC96F0B /* Pods-LiveCryptoConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveCryptoConverter.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveCryptoConverter/Pods-LiveCryptoConverter.release.xcconfig"; sourceTree = "<group>"; };
+		096535A956FA2191C508C9F0 /* Pods_LiveCryptoConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveCryptoConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E5414F9BF78F4AE2CF0F736 /* Pods_LiveCryptoConverterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveCryptoConverterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1211C0C1A5824E9FDB0B0C05 /* Pods-LiveCryptoConverterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveCryptoConverterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveCryptoConverterUITests/Pods-LiveCryptoConverterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		32C29F67D554DCAED067BC6F /* Pods-LiveCryptoConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveCryptoConverter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveCryptoConverter/Pods-LiveCryptoConverter.debug.xcconfig"; sourceTree = "<group>"; };
+		45D069F2D95F032335C448B5 /* Pods-LiveCryptoConverterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveCryptoConverterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveCryptoConverterUITests/Pods-LiveCryptoConverterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8979684B7534DB4E86B7C832 /* Pods_LiveCryptoConverterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveCryptoConverterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2CE221E406212B0C6EA7324 /* Pods-LiveCryptoConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveCryptoConverterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveCryptoConverterTests/Pods-LiveCryptoConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BAF73867BDE258198531FCC6 /* Pods-LiveCryptoConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveCryptoConverterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveCryptoConverterTests/Pods-LiveCryptoConverterTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA903F2720406D4F00FB3B24 /* LiveCryptoConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveCryptoConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA903F2A20406D4F00FB3B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA903F2C20406D4F00FB3B24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA903F2F20406D4F00FB3B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA903F3220406D4F00FB3B24 /* LiveCryptoConverter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LiveCryptoConverter.xcdatamodel; sourceTree = "<group>"; };
+		FA903F3420406D4F00FB3B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA903F3720406D4F00FB3B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA903F3920406D4F00FB3B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA903F3E20406D4F00FB3B24 /* LiveCryptoConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveCryptoConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA903F4220406D4F00FB3B24 /* LiveCryptoConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCryptoConverterTests.swift; sourceTree = "<group>"; };
+		FA903F4420406D4F00FB3B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA903F4920406D4F00FB3B24 /* LiveCryptoConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveCryptoConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA903F4D20406D4F00FB3B24 /* LiveCryptoConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCryptoConverterUITests.swift; sourceTree = "<group>"; };
+		FA903F4F20406D4F00FB3B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA903F5B2040724000FB3B24 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		FA903F5D20408A9F00FB3B24 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		FA903F5E20408A9F00FB3B24 /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		FA903F612040A32200FB3B24 /* LiveRatesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRatesTableViewCell.swift; sourceTree = "<group>"; };
+		FA903F632040A33700FB3B24 /* LiveRatesHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRatesHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		FA903F652040A4AD00FB3B24 /* LiveRatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRatesViewController.swift; sourceTree = "<group>"; };
+		FAB82A762042CEBE0062FCA9 /* CoinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewController.swift; sourceTree = "<group>"; };
+		FAB82A7A2042EDF00062FCA9 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		FAB82A7E204440A10062FCA9 /* CoinsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAB82A8020444B5B0062FCA9 /* LiveCrptoCompareCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCrptoCompareCoreData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA903F2420406D4F00FB3B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB82A7B2042EDF00062FCA9 /* GoogleMobileAds.framework in Frameworks */,
+				57F30230779BFC62A87E7FE3 /* Pods_LiveCryptoConverter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA903F3B20406D4F00FB3B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D108D5EEA4613B28BFC1C997 /* Pods_LiveCryptoConverterTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA903F4620406D4F00FB3B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BA7C1624A3A3B7041D15E4 /* Pods_LiveCryptoConverterUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33B4AD0DFE488E192AA4F87E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				096535A956FA2191C508C9F0 /* Pods_LiveCryptoConverter.framework */,
+				8979684B7534DB4E86B7C832 /* Pods_LiveCryptoConverterTests.framework */,
+				0E5414F9BF78F4AE2CF0F736 /* Pods_LiveCryptoConverterUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F06DF690EE6FAD9E419C060E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32C29F67D554DCAED067BC6F /* Pods-LiveCryptoConverter.debug.xcconfig */,
+				02F4E19BD0D264C15FC96F0B /* Pods-LiveCryptoConverter.release.xcconfig */,
+				A2CE221E406212B0C6EA7324 /* Pods-LiveCryptoConverterTests.debug.xcconfig */,
+				BAF73867BDE258198531FCC6 /* Pods-LiveCryptoConverterTests.release.xcconfig */,
+				1211C0C1A5824E9FDB0B0C05 /* Pods-LiveCryptoConverterUITests.debug.xcconfig */,
+				45D069F2D95F032335C448B5 /* Pods-LiveCryptoConverterUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA903F1E20406D4E00FB3B24 = {
+			isa = PBXGroup;
+			children = (
+				FAB82A7A2042EDF00062FCA9 /* GoogleMobileAds.framework */,
+				FA903F2920406D4F00FB3B24 /* LiveCryptoConverter */,
+				FA903F4120406D4F00FB3B24 /* LiveCryptoConverterTests */,
+				FA903F4C20406D4F00FB3B24 /* LiveCryptoConverterUITests */,
+				FA903F2820406D4F00FB3B24 /* Products */,
+				F06DF690EE6FAD9E419C060E /* Pods */,
+				33B4AD0DFE488E192AA4F87E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA903F2820406D4F00FB3B24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA903F2720406D4F00FB3B24 /* LiveCryptoConverter.app */,
+				FA903F3E20406D4F00FB3B24 /* LiveCryptoConverterTests.xctest */,
+				FA903F4920406D4F00FB3B24 /* LiveCryptoConverterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA903F2920406D4F00FB3B24 /* LiveCryptoConverter */ = {
+			isa = PBXGroup;
+			children = (
+				FA903F2A20406D4F00FB3B24 /* AppDelegate.swift */,
+				FA903F2C20406D4F00FB3B24 /* ViewController.swift */,
+				FA903F2E20406D4F00FB3B24 /* Main.storyboard */,
+				FA903F3420406D4F00FB3B24 /* Assets.xcassets */,
+				FA903F3620406D4F00FB3B24 /* LaunchScreen.storyboard */,
+				FA903F3920406D4F00FB3B24 /* Info.plist */,
+				FA903F3120406D4F00FB3B24 /* LiveCryptoConverter.xcdatamodeld */,
+				FA903F5B2040724000FB3B24 /* DataSource.swift */,
+				FA903F5D20408A9F00FB3B24 /* CurrencyTableViewCell.swift */,
+				FA903F5E20408A9F00FB3B24 /* CurrencyTableViewCell.xib */,
+				FA903F612040A32200FB3B24 /* LiveRatesTableViewCell.swift */,
+				FA903F632040A33700FB3B24 /* LiveRatesHeaderTableViewCell.swift */,
+				FA903F652040A4AD00FB3B24 /* LiveRatesViewController.swift */,
+				FAB82A762042CEBE0062FCA9 /* CoinsViewController.swift */,
+				FAB82A7E204440A10062FCA9 /* CoinsCollectionViewCell.swift */,
+				FAB82A8020444B5B0062FCA9 /* LiveCrptoCompareCoreData.swift */,
+			);
+			path = LiveCryptoConverter;
+			sourceTree = "<group>";
+		};
+		FA903F4120406D4F00FB3B24 /* LiveCryptoConverterTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA903F4220406D4F00FB3B24 /* LiveCryptoConverterTests.swift */,
+				FA903F4420406D4F00FB3B24 /* Info.plist */,
+			);
+			path = LiveCryptoConverterTests;
+			sourceTree = "<group>";
+		};
+		FA903F4C20406D4F00FB3B24 /* LiveCryptoConverterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA903F4D20406D4F00FB3B24 /* LiveCryptoConverterUITests.swift */,
+				FA903F4F20406D4F00FB3B24 /* Info.plist */,
+			);
+			path = LiveCryptoConverterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA903F2620406D4F00FB3B24 /* LiveCryptoConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA903F5220406D4F00FB3B24 /* Build configuration list for PBXNativeTarget "LiveCryptoConverter" */;
+			buildPhases = (
+				FBD9C7D0C1CE09A45665F980 /* [CP] Check Pods Manifest.lock */,
+				FA903F2320406D4F00FB3B24 /* Sources */,
+				FA903F2420406D4F00FB3B24 /* Frameworks */,
+				FA903F2520406D4F00FB3B24 /* Resources */,
+				55018A758B1AB09AF21F5B6D /* [CP] Embed Pods Frameworks */,
+				C768047D4ACE743C9599BA00 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveCryptoConverter;
+			productName = LiveCryptoConverter;
+			productReference = FA903F2720406D4F00FB3B24 /* LiveCryptoConverter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA903F3D20406D4F00FB3B24 /* LiveCryptoConverterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA903F5520406D4F00FB3B24 /* Build configuration list for PBXNativeTarget "LiveCryptoConverterTests" */;
+			buildPhases = (
+				1700977B7BA1300C070D964F /* [CP] Check Pods Manifest.lock */,
+				FA903F3A20406D4F00FB3B24 /* Sources */,
+				FA903F3B20406D4F00FB3B24 /* Frameworks */,
+				FA903F3C20406D4F00FB3B24 /* Resources */,
+				D5E8A99E0B62F8128E241551 /* [CP] Embed Pods Frameworks */,
+				088E66D8980916050297BEC4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA903F4020406D4F00FB3B24 /* PBXTargetDependency */,
+			);
+			name = LiveCryptoConverterTests;
+			productName = LiveCryptoConverterTests;
+			productReference = FA903F3E20406D4F00FB3B24 /* LiveCryptoConverterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA903F4820406D4F00FB3B24 /* LiveCryptoConverterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA903F5820406D4F00FB3B24 /* Build configuration list for PBXNativeTarget "LiveCryptoConverterUITests" */;
+			buildPhases = (
+				5055F76CE1AC35C15C3B7EC4 /* [CP] Check Pods Manifest.lock */,
+				FA903F4520406D4F00FB3B24 /* Sources */,
+				FA903F4620406D4F00FB3B24 /* Frameworks */,
+				FA903F4720406D4F00FB3B24 /* Resources */,
+				233E443EB96669AAA6E723CB /* [CP] Embed Pods Frameworks */,
+				74F88D92D19DE3ECC743C770 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA903F4B20406D4F00FB3B24 /* PBXTargetDependency */,
+			);
+			name = LiveCryptoConverterUITests;
+			productName = LiveCryptoConverterUITests;
+			productReference = FA903F4920406D4F00FB3B24 /* LiveCryptoConverterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA903F1F20406D4E00FB3B24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = MacBook;
+				TargetAttributes = {
+					FA903F2620406D4F00FB3B24 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FA903F3D20406D4F00FB3B24 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA903F2620406D4F00FB3B24;
+					};
+					FA903F4820406D4F00FB3B24 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA903F2620406D4F00FB3B24;
+					};
+				};
+			};
+			buildConfigurationList = FA903F2220406D4E00FB3B24 /* Build configuration list for PBXProject "LiveCryptoConverter" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA903F1E20406D4E00FB3B24;
+			productRefGroup = FA903F2820406D4F00FB3B24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA903F2620406D4F00FB3B24 /* LiveCryptoConverter */,
+				FA903F3D20406D4F00FB3B24 /* LiveCryptoConverterTests */,
+				FA903F4820406D4F00FB3B24 /* LiveCryptoConverterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA903F2520406D4F00FB3B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA903F6020408A9F00FB3B24 /* CurrencyTableViewCell.xib in Resources */,
+				FA903F3820406D4F00FB3B24 /* LaunchScreen.storyboard in Resources */,
+				FA903F3520406D4F00FB3B24 /* Assets.xcassets in Resources */,
+				FA903F3020406D4F00FB3B24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA903F3C20406D4F00FB3B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA903F4720406D4F00FB3B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		088E66D8980916050297BEC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveCryptoConverterTests/Pods-LiveCryptoConverterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1700977B7BA1300C070D964F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveCryptoConverterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		233E443EB96669AAA6E723CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveCryptoConverterUITests/Pods-LiveCryptoConverterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5055F76CE1AC35C15C3B7EC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveCryptoConverterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55018A758B1AB09AF21F5B6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LiveCryptoConverter/Pods-LiveCryptoConverter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+				"${BUILT_PRODUCTS_DIR}/GzipSwift/Gzip.framework",
+				"${BUILT_PRODUCTS_DIR}/RSSelectionMenu/RSSelectionMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SKActivityIndicatorView/SKActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gzip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSSelectionMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveCryptoConverter/Pods-LiveCryptoConverter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74F88D92D19DE3ECC743C770 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveCryptoConverterUITests/Pods-LiveCryptoConverterUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C768047D4ACE743C9599BA00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveCryptoConverter/Pods-LiveCryptoConverter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5E8A99E0B62F8128E241551 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveCryptoConverterTests/Pods-LiveCryptoConverterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBD9C7D0C1CE09A45665F980 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveCryptoConverter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA903F2320406D4F00FB3B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA903F2D20406D4F00FB3B24 /* ViewController.swift in Sources */,
+				FAB82A8120444B5B0062FCA9 /* LiveCrptoCompareCoreData.swift in Sources */,
+				FA903F622040A32300FB3B24 /* LiveRatesTableViewCell.swift in Sources */,
+				FA903F2B20406D4F00FB3B24 /* AppDelegate.swift in Sources */,
+				FAB82A7F204440A10062FCA9 /* CoinsCollectionViewCell.swift in Sources */,
+				FAB82A772042CEBE0062FCA9 /* CoinsViewController.swift in Sources */,
+				FA903F642040A33700FB3B24 /* LiveRatesHeaderTableViewCell.swift in Sources */,
+				FA903F3320406D4F00FB3B24 /* LiveCryptoConverter.xcdatamodeld in Sources */,
+				FA903F5F20408A9F00FB3B24 /* CurrencyTableViewCell.swift in Sources */,
+				FA903F662040A4AD00FB3B24 /* LiveRatesViewController.swift in Sources */,
+				FA903F5C2040724000FB3B24 /* DataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA903F3A20406D4F00FB3B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA903F4320406D4F00FB3B24 /* LiveCryptoConverterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA903F4520406D4F00FB3B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA903F4E20406D4F00FB3B24 /* LiveCryptoConverterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA903F4020406D4F00FB3B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA903F2620406D4F00FB3B24 /* LiveCryptoConverter */;
+			targetProxy = FA903F3F20406D4F00FB3B24 /* PBXContainerItemProxy */;
+		};
+		FA903F4B20406D4F00FB3B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA903F2620406D4F00FB3B24 /* LiveCryptoConverter */;
+			targetProxy = FA903F4A20406D4F00FB3B24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA903F2E20406D4F00FB3B24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA903F2F20406D4F00FB3B24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA903F3620406D4F00FB3B24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA903F3720406D4F00FB3B24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA903F5020406D4F00FB3B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA903F5120406D4F00FB3B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA903F5320406D4F00FB3B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C29F67D554DCAED067BC6F /* Pods-LiveCryptoConverter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FP6X567Y52;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = LiveCryptoConverter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosynch.cryptoconverter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA903F5420406D4F00FB3B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02F4E19BD0D264C15FC96F0B /* Pods-LiveCryptoConverter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FP6X567Y52;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = LiveCryptoConverter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosynch.cryptoconverter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA903F5620406D4F00FB3B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2CE221E406212B0C6EA7324 /* Pods-LiveCryptoConverterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FP6X567Y52;
+				INFOPLIST_FILE = LiveCryptoConverterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosynch.LiveCryptoConverterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveCryptoConverter.app/LiveCryptoConverter";
+			};
+			name = Debug;
+		};
+		FA903F5720406D4F00FB3B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAF73867BDE258198531FCC6 /* Pods-LiveCryptoConverterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FP6X567Y52;
+				INFOPLIST_FILE = LiveCryptoConverterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosynch.LiveCryptoConverterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveCryptoConverter.app/LiveCryptoConverter";
+			};
+			name = Release;
+		};
+		FA903F5920406D4F00FB3B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1211C0C1A5824E9FDB0B0C05 /* Pods-LiveCryptoConverterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FP6X567Y52;
+				INFOPLIST_FILE = LiveCryptoConverterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosynch.LiveCryptoConverterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LiveCryptoConverter;
+			};
+			name = Debug;
+		};
+		FA903F5A20406D4F00FB3B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D069F2D95F032335C448B5 /* Pods-LiveCryptoConverterUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FP6X567Y52;
+				INFOPLIST_FILE = LiveCryptoConverterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosynch.LiveCryptoConverterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LiveCryptoConverter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA903F2220406D4E00FB3B24 /* Build configuration list for PBXProject "LiveCryptoConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA903F5020406D4F00FB3B24 /* Debug */,
+				FA903F5120406D4F00FB3B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA903F5220406D4F00FB3B24 /* Build configuration list for PBXNativeTarget "LiveCryptoConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA903F5320406D4F00FB3B24 /* Debug */,
+				FA903F5420406D4F00FB3B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA903F5520406D4F00FB3B24 /* Build configuration list for PBXNativeTarget "LiveCryptoConverterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA903F5620406D4F00FB3B24 /* Debug */,
+				FA903F5720406D4F00FB3B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA903F5820406D4F00FB3B24 /* Build configuration list for PBXNativeTarget "LiveCryptoConverterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA903F5920406D4F00FB3B24 /* Debug */,
+				FA903F5A20406D4F00FB3B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA903F3120406D4F00FB3B24 /* LiveCryptoConverter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA903F3220406D4F00FB3B24 /* LiveCryptoConverter.xcdatamodel */,
+			);
+			currentVersion = FA903F3220406D4F00FB3B24 /* LiveCryptoConverter.xcdatamodel */;
+			path = LiveCryptoConverter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA903F1F20406D4E00FB3B24 /* Project object */;
+}

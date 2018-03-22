@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CurrencyTableViewCell" rowHeight="72" id="KGk-i7-Jjw" customClass="CurrencyTableViewCell" customModule="LiveCryptoConverter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wi0-Yu-1XB">
+                        <rect key="frame" x="16" y="18" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="CSa-Vy-NH2"/>
+                            <constraint firstAttribute="height" constant="35" id="FWR-re-GVu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6K-tf-A2C">
+                        <rect key="frame" x="59" y="19" width="42" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejz-sm-JC4">
+                        <rect key="frame" x="332" y="19" width="42" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="O6K-tf-A2C" secondAttribute="bottom" constant="8" id="Fj6-3d-bHe"/>
+                    <constraint firstItem="ejz-sm-JC4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="I3C-SI-KOh"/>
+                    <constraint firstItem="O6K-tf-A2C" firstAttribute="leading" secondItem="wi0-Yu-1XB" secondAttribute="trailing" constant="8" id="JvB-5e-MLq"/>
+                    <constraint firstItem="wi0-Yu-1XB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MiS-Bk-845"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ejz-sm-JC4" secondAttribute="bottom" constant="8" id="O6C-bq-eay"/>
+                    <constraint firstItem="wi0-Yu-1XB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="P0D-dD-fIv"/>
+                    <constraint firstItem="ejz-sm-JC4" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="T9Z-c2-WBR"/>
+                    <constraint firstItem="O6K-tf-A2C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="ap3-pI-zon"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="IdentifierOfCurrency" destination="ejz-sm-JC4" id="vv5-f9-0xx"/>
+                <outlet property="imageOfCurrency" destination="wi0-Yu-1XB" id="SKv-lk-c2L"/>
+                <outlet property="nameOfCurrency" destination="O6K-tf-A2C" id="vfG-sX-544"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="67"/>
+        </tableViewCell>
+    </objects>
+</document>

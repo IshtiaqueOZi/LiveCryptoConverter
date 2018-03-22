@@ -1,0 +1,51 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2da-SI-DSH"; */
+"2da-SI-DSH.text" = "Label";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "3G0-Jl-5tK"; */
+"3G0-Jl-5tK.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "IOSYNCH"; ObjectID = "Bl3-gM-L6f"; */
+"Bl3-gM-L6f.text" = "IOSYNCH";
+
+/* Class = "UILabel"; text = "  Name"; ObjectID = "FuC-P9-JAf"; */
+"FuC-P9-JAf.text" = "  Name";
+
+/* Class = "UILabel"; text = "Live Rates"; ObjectID = "HRJ-Ys-R61"; */
+"HRJ-Ys-R61.text" = "Live Rates";
+
+/* Class = "UITabBarItem"; title = "Coins"; ObjectID = "NuF-hE-qCl"; */
+"NuF-hE-qCl.title" = "Coins";
+
+/* Class = "UILabel"; text = "BTC"; ObjectID = "PsT-zz-ZXU"; */
+"PsT-zz-ZXU.text" = "BTC";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Q79-GT-5wk"; */
+"Q79-GT-5wk.text" = "Label";
+
+/* Class = "UILabel"; text = "<API> Credits CryptoCompare"; ObjectID = "ZH0-uk-DyM"; */
+"ZH0-uk-DyM.text" = "<API> Credits CryptoCompare";
+
+/* Class = "UILabel"; text = "BTC"; ObjectID = "bil-hj-IZw"; */
+"bil-hj-IZw.text" = "BTC";
+
+/* Class = "UILabel"; text = "version 1.1.0"; ObjectID = "dnJ-hI-gcK"; */
+"dnJ-hI-gcK.text" = "version 1.1.0";
+
+/* Class = "UITabBarItem"; title = "Converter"; ObjectID = "foy-Ht-dGK"; */
+"foy-Ht-dGK.title" = "Converter";
+
+/* Class = "UITabBarItem"; title = "About"; ObjectID = "idO-IF-6qe"; */
+"idO-IF-6qe.title" = "About";
+
+/* Class = "UITabBarItem"; title = "LiveRates"; ObjectID = "lyz-hu-UZG"; */
+"lyz-hu-UZG.title" = "LiveRates";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "qMj-UO-TGx"; */
+"qMj-UO-TGx.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "vfp-Lc-U53"; */
+"vfp-Lc-U53.text" = "Label";
+
+/* Class = "UILabel"; text = "Price(USD)"; ObjectID = "vq7-3b-sFq"; */
+"vq7-3b-sFq.text" = "Price(USD)";
