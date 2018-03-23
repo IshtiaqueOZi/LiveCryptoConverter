@@ -164,6 +164,7 @@ func setMonitored(coinn:coin)  {
     
     let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Crypto")
     let result = try? LiveCryptoDataBase.CoreDataStore.Context().fetch(fetch) as! [Crypto]
+    // use sort decripter later
     for cryptoo in result! {
         if cryptoo.symbol == coinn.symbol {
             cryptoo.is_monitored = true
@@ -197,6 +198,7 @@ func getListFromCoreData()  {
     
     
 }
+    
 override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -237,9 +239,12 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 
 var json:JSON?
 var baseImageUrl:String?
-func extractBaseUrl()  {
     
-    baseImageUrl = json!["BaseImageUrl"].string
+    
+  var jsonData:JSON?
+   // gives base url for images from JSON
+func extractBaseUrl()  {
+        baseImageUrl = json!["BaseImageUrl"].string
     self.jsonData = self.json!["Data"]
    
     for crypto in self.coins
@@ -249,15 +254,19 @@ func extractBaseUrl()  {
     }
    
 }
-var jsonData:JSON?
+    
+
+    
+    // gives image url for each currency from JSON
 func extractImageUr(crypto:coin)  {
 
     let coinData = jsonData![crypto.symbol!]
-    
     crypto.ImageUrl = coinData["ImageUrl"].string
   
 }
     
+    
+    // this list gives arround 1800 coins now I have coin name and keyword I can utilize this api to get their images
 func getCoinsDataWithImageUrl()  {
     
     Alamofire.request("https://min-api.cryptocompare.com/data/all/coinlist", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: defaultHeaders).responseJSON { (response) in
@@ -294,16 +303,16 @@ func getImage(crypto:coin)  {
     }
     
     let url = self.baseImageUrl! + crypto.ImageUrl!
-Alamofire.request(url, method: .get).responseImage { response in
     
+Alamofire.request(url, method: .get).responseImage { response in
 guard let image = response.result.value else {
 // Handle error
 return
+    
 }
      crypto.image = image
-    
+    // now store the coin with its image to core data.
     self.storeToCoreData(crypto: crypto)
-    
     self.CryptoCollectionView.reloadData()
     
 }
