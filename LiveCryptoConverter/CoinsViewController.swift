@@ -23,7 +23,6 @@ var ImageUrl:String?
 var name:String?
 var image = UIImage(named:"not-available-circle")
 var price_usd:String?
-
 }
 
 class CoinName: EVObject {
