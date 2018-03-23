@@ -24,7 +24,7 @@
 		FA903F622040A32300FB3B24 /* LiveRatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F612040A32200FB3B24 /* LiveRatesTableViewCell.swift */; };
 		FA903F642040A33700FB3B24 /* LiveRatesHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F632040A33700FB3B24 /* LiveRatesHeaderTableViewCell.swift */; };
 		FA903F662040A4AD00FB3B24 /* LiveRatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F652040A4AD00FB3B24 /* LiveRatesViewController.swift */; };
-		FAB82A772042CEBE0062FCA9 /* CoinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB82A762042CEBE0062FCA9 /* CoinsViewController.swift */; };
+		FAB82A772042CEBE0062FCA9 /* TopCyptoCurrencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB82A762042CEBE0062FCA9 /* TopCyptoCurrencies.swift */; };
 		FAB82A7B2042EDF00062FCA9 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB82A7A2042EDF00062FCA9 /* GoogleMobileAds.framework */; };
 		FAB82A7F204440A10062FCA9 /* CoinsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB82A7E204440A10062FCA9 /* CoinsCollectionViewCell.swift */; };
 		FAB82A8120444B5B0062FCA9 /* LiveCrptoCompareCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB82A8020444B5B0062FCA9 /* LiveCrptoCompareCoreData.swift */; };
@@ -77,7 +77,7 @@
 		FA903F612040A32200FB3B24 /* LiveRatesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRatesTableViewCell.swift; sourceTree = "<group>"; };
 		FA903F632040A33700FB3B24 /* LiveRatesHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRatesHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		FA903F652040A4AD00FB3B24 /* LiveRatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRatesViewController.swift; sourceTree = "<group>"; };
-		FAB82A762042CEBE0062FCA9 /* CoinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewController.swift; sourceTree = "<group>"; };
+		FAB82A762042CEBE0062FCA9 /* TopCyptoCurrencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCyptoCurrencies.swift; sourceTree = "<group>"; };
 		FAB82A7A2042EDF00062FCA9 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		FAB82A7E204440A10062FCA9 /* CoinsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAB82A8020444B5B0062FCA9 /* LiveCrptoCompareCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCrptoCompareCoreData.swift; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 				FA903F612040A32200FB3B24 /* LiveRatesTableViewCell.swift */,
 				FA903F632040A33700FB3B24 /* LiveRatesHeaderTableViewCell.swift */,
 				FA903F652040A4AD00FB3B24 /* LiveRatesViewController.swift */,
-				FAB82A762042CEBE0062FCA9 /* CoinsViewController.swift */,
+				FAB82A762042CEBE0062FCA9 /* TopCyptoCurrencies.swift */,
 				FAB82A7E204440A10062FCA9 /* CoinsCollectionViewCell.swift */,
 				FAB82A8020444B5B0062FCA9 /* LiveCrptoCompareCoreData.swift */,
 			);
@@ -514,7 +514,7 @@
 				FA903F622040A32300FB3B24 /* LiveRatesTableViewCell.swift in Sources */,
 				FA903F2B20406D4F00FB3B24 /* AppDelegate.swift in Sources */,
 				FAB82A7F204440A10062FCA9 /* CoinsCollectionViewCell.swift in Sources */,
-				FAB82A772042CEBE0062FCA9 /* CoinsViewController.swift in Sources */,
+				FAB82A772042CEBE0062FCA9 /* TopCyptoCurrencies.swift in Sources */,
 				FA903F642040A33700FB3B24 /* LiveRatesHeaderTableViewCell.swift in Sources */,
 				FA903F3320406D4F00FB3B24 /* LiveCryptoConverter.xcdatamodeld in Sources */,
 				FA903F5F20408A9F00FB3B24 /* CurrencyTableViewCell.swift in Sources */,

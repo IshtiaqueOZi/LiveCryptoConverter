@@ -16,13 +16,17 @@ import GoogleMobileAds
 import Gzip
 import SKActivityIndicatorView
 
+
+   // DTO
 class coin: EVObject {
 
 var symbol:String?
 var ImageUrl:String?
 var name:String?
 var image = UIImage(named:"not-available-circle")
+    // default image
 var price_usd:String?
+    
 }
 
 class CoinName: EVObject {
@@ -31,7 +35,7 @@ var name:coin = coin()
 
 }
 
-class ResponseObjec: EVObject {
+class ResponseObject: EVObject {
 
 var BaseImageUrl:String?
 var data:[CoinName] = []
@@ -41,7 +45,7 @@ var data:[CoinName] = []
 
 
 
-class CoinsViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UISearchBarDelegate,GADBannerViewDelegate,GADInterstitialDelegate {
+class TopCyptoCurrencies: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UISearchBarDelegate,GADBannerViewDelegate,GADInterstitialDelegate {
 
 
 @IBOutlet weak var bannerView: GADBannerView!
@@ -54,10 +58,13 @@ class CoinsViewController: UIViewController,UICollectionViewDelegate,UICollectio
 var shouldShowfiltered = false
 var coins:[coin] = []
 var filteredcoid:[coin] = []
-
+var intersitial: GADInterstitial!
+    
 func getTopCoinsWithKeyword(){
+    // activity indicator
 SKActivityIndicator.show(" Fetching Market Top Cryptos ")
 
+    // I use this api get coin name and keyword.
 let url = "https://api.coinmarketcap.com/v1/ticker/?start=0&limit=200"
 
 Alamofire.request(url, method: .get, parameters: nil
@@ -66,12 +73,13 @@ Alamofire.request(url, method: .get, parameters: nil
         print(response)
         
         
-        let data = String(data:response.data!,encoding:String.Encoding.ascii)
+        let data = String(data:response.data!,encoding:String.Encoding.ascii) // json string
         let listOfCoins = [coin](json:data)
         self.coins = listOfCoins
         SKActivityIndicator.dismiss()
+        
         DispatchQueue.main.async {
-            self.CryptoCollectionView.reloadData()
+                self.CryptoCollectionView.reloadData()
                 self.getCoinsDataWithImageUrl()
         }
      
@@ -90,7 +98,7 @@ func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection s
     }
 }
 func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    
+    // showing search result.
     if shouldShowfiltered {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CoinsCollectionViewCell", for: indexPath) as! CoinsCollectionViewCell
         cell.coinImage.image = filteredcoid[indexPath.row].image
@@ -108,7 +116,7 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
     return cell
 }
 }
-    var intersitial: GADInterstitial!
+    
 func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     return CGSize(width: self.view.frame.size.width/1.3, height: 70)
 }
