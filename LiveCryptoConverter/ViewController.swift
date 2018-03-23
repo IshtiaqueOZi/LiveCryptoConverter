@@ -73,18 +73,18 @@ func getConvertedRatesFromAPI()  {
 
 func setDefaultFields() {
     
-    self.sourceImage.image =  (DataSource.sharedInstance.cryptos.first?.image)
-    self.sourceLabel.text = DataSource.sharedInstance.cryptos.first?.iden
-    self.destinationImage.image  = (DataSource.sharedInstance.currencie.first?.image)
-    self.destinationLabel.text = DataSource.sharedInstance.currencie.first?.name
+    self.sourceImage.image =  (DefaultCoinDatasource.sharedInstance.cryptos.first?.image)
+    self.sourceLabel.text = DefaultCoinDatasource.sharedInstance.cryptos.first?.iden
+    self.destinationImage.image  = (DefaultCoinDatasource.sharedInstance.currencie.first?.image)
+    self.destinationLabel.text = DefaultCoinDatasource.sharedInstance.currencie.first?.name
     self.sourceTextField.placeholder = "Enter Quantity"
     
 }
 
 func populateData()  {
     
-    DataSource.sharedInstance.populateCryptos()
-    DataSource.sharedInstance.populateCurencies()
+    DefaultCoinDatasource.sharedInstance.populateCryptos()
+    DefaultCoinDatasource.sharedInstance.populateCurencies()
 }
 @objc func srcTextFieldDidChange(_ textField: UITextField) {
     
@@ -146,14 +146,14 @@ override func viewDidLoad() {
     setDefaultFields()
     getConvertedRatesFromAPI()
     
-     cryptosSelectionMenu =  RSSelectionMenu(selectionType: .Single, dataSource: DataSource.sharedInstance.cryptos , cellType: .Custom(nibName: "CurrencyTableViewCell", cellIdentifier: "CurrencyTableViewCell")) { (cell, person, indexPath) in
+     cryptosSelectionMenu =  RSSelectionMenu(selectionType: .Single, dataSource: DefaultCoinDatasource.sharedInstance.cryptos , cellType: .Custom(nibName: "CurrencyTableViewCell", cellIdentifier: "CurrencyTableViewCell")) { (cell, person, indexPath) in
         
         // cast cell to your custom cell type
         let customCell = cell as! CurrencyTableViewCell
         
-        customCell.nameOfCurrency.text = DataSource.sharedInstance.cryptos[indexPath.row].name
-        customCell.IdentifierOfCurrency.text = DataSource.sharedInstance.cryptos[indexPath.row].iden
-        customCell.imageOfCurrency.image  = DataSource.sharedInstance.cryptos[indexPath.row].image
+        customCell.nameOfCurrency.text = DefaultCoinDatasource.sharedInstance.cryptos[indexPath.row].name
+        customCell.IdentifierOfCurrency.text = DefaultCoinDatasource.sharedInstance.cryptos[indexPath.row].iden
+        customCell.imageOfCurrency.image  = DefaultCoinDatasource.sharedInstance.cryptos[indexPath.row].image
         // set cell data here
     }
     cryptosSelectionMenu.uniquePropertyName = "name"
@@ -161,19 +161,19 @@ override func viewDidLoad() {
     
     
     
-    CurrencySelectionMenu =  RSSelectionMenu(selectionType: .Single, dataSource: DataSource.sharedInstance.currencie , cellType: .Custom(nibName: "CurrencyTableViewCell", cellIdentifier: "CurrencyTableViewCell")) { (cell, person, indexPath) in
+    CurrencySelectionMenu =  RSSelectionMenu(selectionType: .Single, dataSource: DefaultCoinDatasource.sharedInstance.currencie , cellType: .Custom(nibName: "CurrencyTableViewCell", cellIdentifier: "CurrencyTableViewCell")) { (cell, person, indexPath) in
         
         // cast cell to your custom cell type
         let customCell = cell as! CurrencyTableViewCell
         
-        customCell.nameOfCurrency.text = DataSource.sharedInstance.currencie[indexPath.row].iden
-        customCell.IdentifierOfCurrency.text = DataSource.sharedInstance.currencie[indexPath.row].name
-        customCell.imageOfCurrency.image  = UIImage(named:DataSource.sharedInstance.currencie[indexPath.row].name.lowercased())
+        customCell.nameOfCurrency.text = DefaultCoinDatasource.sharedInstance.currencie[indexPath.row].iden
+        customCell.IdentifierOfCurrency.text = DefaultCoinDatasource.sharedInstance.currencie[indexPath.row].name
+        customCell.imageOfCurrency.image  = UIImage(named:DefaultCoinDatasource.sharedInstance.currencie[indexPath.row].name.lowercased())
         // set cell data here
     }
     CurrencySelectionMenu.uniquePropertyName = "name"
     
-    cryptosSelectionMenu.setSelectedItems(items: DataSource.sharedInstance.cryptos) { (cell, Selected, indexPath) in
+    cryptosSelectionMenu.setSelectedItems(items: DefaultCoinDatasource.sharedInstance.cryptos) { (cell, Selected, indexPath) in
         
         let selected:[Currency] = indexPath as! [Currency]
         self.sourceImage.image = (selected.last?.image)
@@ -181,7 +181,7 @@ override func viewDidLoad() {
         self.getConvertedRatesFromAPI()
         
     }
-    CurrencySelectionMenu.setSelectedItems(items: DataSource.sharedInstance.currencie) { (cell, Selected, indexPath) in
+    CurrencySelectionMenu.setSelectedItems(items: DefaultCoinDatasource.sharedInstance.currencie) { (cell, Selected, indexPath) in
         
         let selected:[Currency] = indexPath as! [Currency]
         self.destinationImage.image = (selected.last?.image)

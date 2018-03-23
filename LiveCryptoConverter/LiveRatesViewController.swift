@@ -26,7 +26,7 @@ class LiveRatesViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     self.getPriceForCryptos()
 }
-var dataSource = DataSource.sharedInstance.currencie
+var dataSource = DefaultCoinDatasource.sharedInstance.currencie
 var currencySelected = Currency()
  var CurrencySelectionMenu = RSSelectionMenu<Any>()
 var odd = false
@@ -39,7 +39,7 @@ var odd = false
         self.intersitial =  self.createAndLoadInterstitial()
     }
     CurrencySelectionMenu.show(style: .Formsheet, from: self)
-    CurrencySelectionMenu.setSelectedItems(items: DataSource.sharedInstance.currencie) { (cell, Selected, indexPath) in
+    CurrencySelectionMenu.setSelectedItems(items: DefaultCoinDatasource.sharedInstance.currencie) { (cell, Selected, indexPath) in
         
        
         
@@ -58,14 +58,14 @@ func numberOfSections(in tableView: UITableView) -> Int
 }
 func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
-    return DataSource.sharedInstance.cryptos.count
+    return DefaultCoinDatasource.sharedInstance.cryptos.count
 }
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
     let cell = tableView.dequeueReusableCell(withIdentifier: "LiveRatesTableViewCell", for: indexPath) as! LiveRatesTableViewCell
-    cell.currencyImage.image = DataSource.sharedInstance.cryptos[indexPath.row].image
-    cell.cryptoName.text = DataSource.sharedInstance.cryptos[indexPath.row].name
-    cell.price.text = String(DataSource.sharedInstance.cryptos[indexPath.row].price)
+    cell.currencyImage.image = DefaultCoinDatasource.sharedInstance.cryptos[indexPath.row].image
+    cell.cryptoName.text = DefaultCoinDatasource.sharedInstance.cryptos[indexPath.row].name
+    cell.price.text = String(DefaultCoinDatasource.sharedInstance.cryptos[indexPath.row].price)
     cell.currencyImage.asCircle()
     return cell
     
@@ -89,7 +89,7 @@ func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> B
 func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
     let delete = UITableViewRowAction(style: .destructive, title: "Remove") { (action, indexPath) in
 
-        DataSource.sharedInstance.cryptos.remove(at: indexPath.row)
+        DefaultCoinDatasource.sharedInstance.cryptos.remove(at: indexPath.row)
         self.currencyTableView.reloadData()
         
     }
@@ -99,15 +99,15 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let actionSheet = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)
     let add = UIAlertAction(title: "Pin to top", style: .default, handler: { (action) in
         
-        DataSource.sharedInstance.cryptos[indexPath.row].ispinnedToTop = true
-        self.pinToTop(crypto: DataSource.sharedInstance.cryptos[indexPath.row])
-        DataSource.sharedInstance.cryptos.sort(by: { $0.ispinnedToTop && !$1.ispinnedToTop })
+        DefaultCoinDatasource.sharedInstance.cryptos[indexPath.row].ispinnedToTop = true
+        self.pinToTop(crypto: DefaultCoinDatasource.sharedInstance.cryptos[indexPath.row])
+        DefaultCoinDatasource.sharedInstance.cryptos.sort(by: { $0.ispinnedToTop && !$1.ispinnedToTop })
 
         self.currencyTableView.reloadData()
     })
     let remove = UIAlertAction(title: "Remove from list", style: .default, handler: { (action) in
         
-        DataSource.sharedInstance.cryptos.remove(at: indexPath.row)
+        DefaultCoinDatasource.sharedInstance.cryptos.remove(at: indexPath.row)
         self.currencyTableView.reloadData()
     })
     
@@ -136,7 +136,7 @@ func pinToTop(crypto:Currency)
 func getPriceForCryptos(){
     
 
-    for crypto in DataSource.sharedInstance.cryptos
+    for crypto in DefaultCoinDatasource.sharedInstance.cryptos
     {
         
         fetchLiveRates(currency: crypto, selectedName: self.currencySelected.name)
@@ -181,11 +181,11 @@ func createAndLoadInterstitial() -> GADInterstitial
 
 func populateData()  {
     
-    DataSource.sharedInstance.populateCryptos()
+    DefaultCoinDatasource.sharedInstance.populateCryptos()
     // sort on pinned to top behaviour.
-    DataSource.sharedInstance.cryptos.sort(by: { $0.ispinnedToTop && !$1.ispinnedToTop })
+    DefaultCoinDatasource.sharedInstance.cryptos.sort(by: { $0.ispinnedToTop && !$1.ispinnedToTop })
 
-    self.currencySelected = DataSource.sharedInstance.currencie.first!
+    self.currencySelected = DefaultCoinDatasource.sharedInstance.currencie.first!
 
     currencyTableView.reloadData()
   
@@ -201,19 +201,19 @@ override func viewWillAppear(_ animated: Bool) {
 }
 override func viewDidLoad() {
     super.viewDidLoad()
-   DataSource.sharedInstance.populateCurencies()
+   DefaultCoinDatasource.sharedInstance.populateCurencies()
    
     // makes intersitial ready
        self.intersitial  =  createAndLoadInterstitial()
     
-    CurrencySelectionMenu =  RSSelectionMenu(selectionType: .Single, dataSource: DataSource.sharedInstance.currencie , cellType: .Custom(nibName: "CurrencyTableViewCell", cellIdentifier: "CurrencyTableViewCell")) { (cell, person, indexPath) in
+    CurrencySelectionMenu =  RSSelectionMenu(selectionType: .Single, dataSource: DefaultCoinDatasource.sharedInstance.currencie , cellType: .Custom(nibName: "CurrencyTableViewCell", cellIdentifier: "CurrencyTableViewCell")) { (cell, person, indexPath) in
         
         // cast cell to your custom cell type
         let customCell = cell as! CurrencyTableViewCell
         
-        customCell.nameOfCurrency.text = DataSource.sharedInstance.currencie[indexPath.row].iden
-        customCell.IdentifierOfCurrency.text = DataSource.sharedInstance.currencie[indexPath.row].name
-        customCell.imageOfCurrency.image  = UIImage(named:DataSource.sharedInstance.currencie[indexPath.row].name.lowercased())
+        customCell.nameOfCurrency.text = DefaultCoinDatasource.sharedInstance.currencie[indexPath.row].iden
+        customCell.IdentifierOfCurrency.text = DefaultCoinDatasource.sharedInstance.currencie[indexPath.row].name
+        customCell.imageOfCurrency.image  = UIImage(named:DefaultCoinDatasource.sharedInstance.currencie[indexPath.row].name.lowercased())
         // set cell data here
     }
     CurrencySelectionMenu.uniquePropertyName = "name"

@@ -63,14 +63,19 @@ class Currency: NSObject {
     
 }
 
-class DataSource: NSObject {
+
+
+
+
+// default coins
+class DefaultCoinDatasource: NSObject {
     
     
    lazy var cryptos:[Currency] = []
    lazy var currencie:[Currency] = []
     
-    static var sharedInstance:DataSource = {
-        return DataSource()
+    static var sharedInstance:DefaultCoinDatasource = {
+        return DefaultCoinDatasource()
     }()
     
     func populateCryptos()
@@ -98,16 +103,12 @@ class DataSource: NSObject {
         let result = try? LiveCryptoDataBase.CoreDataStore.Context().fetch(fetch) as! [Crypto]
         
         for cryptoo in result! {
-
-
             if cryptoo.is_monitored
             {
                 self.cryptos.append(Currency(name: cryptoo.name!, iden: cryptoo.symbol!, isCoreData: true, data: cryptoo.imageData!,isCurrency:false,ispinned:cryptoo.is_monitored))
             }
         }
-    
-        
-    
+ 
     }
     
     

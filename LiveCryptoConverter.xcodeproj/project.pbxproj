@@ -18,7 +18,7 @@
 		FA903F3820406D4F00FB3B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA903F3620406D4F00FB3B24 /* LaunchScreen.storyboard */; };
 		FA903F4320406D4F00FB3B24 /* LiveCryptoConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F4220406D4F00FB3B24 /* LiveCryptoConverterTests.swift */; };
 		FA903F4E20406D4F00FB3B24 /* LiveCryptoConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F4D20406D4F00FB3B24 /* LiveCryptoConverterUITests.swift */; };
-		FA903F5C2040724000FB3B24 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F5B2040724000FB3B24 /* DataSource.swift */; };
+		FA903F5C2040724000FB3B24 /* DefaultCoinDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F5B2040724000FB3B24 /* DefaultCoinDatasource.swift */; };
 		FA903F5F20408A9F00FB3B24 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F5D20408A9F00FB3B24 /* CurrencyTableViewCell.swift */; };
 		FA903F6020408A9F00FB3B24 /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA903F5E20408A9F00FB3B24 /* CurrencyTableViewCell.xib */; };
 		FA903F622040A32300FB3B24 /* LiveRatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA903F612040A32200FB3B24 /* LiveRatesTableViewCell.swift */; };
@@ -71,7 +71,7 @@
 		FA903F4920406D4F00FB3B24 /* LiveCryptoConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveCryptoConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA903F4D20406D4F00FB3B24 /* LiveCryptoConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCryptoConverterUITests.swift; sourceTree = "<group>"; };
 		FA903F4F20406D4F00FB3B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA903F5B2040724000FB3B24 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		FA903F5B2040724000FB3B24 /* DefaultCoinDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCoinDatasource.swift; sourceTree = "<group>"; };
 		FA903F5D20408A9F00FB3B24 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		FA903F5E20408A9F00FB3B24 /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
 		FA903F612040A32200FB3B24 /* LiveRatesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRatesTableViewCell.swift; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 				FA903F3620406D4F00FB3B24 /* LaunchScreen.storyboard */,
 				FA903F3920406D4F00FB3B24 /* Info.plist */,
 				FA903F3120406D4F00FB3B24 /* LiveCryptoConverter.xcdatamodeld */,
-				FA903F5B2040724000FB3B24 /* DataSource.swift */,
+				FA903F5B2040724000FB3B24 /* DefaultCoinDatasource.swift */,
 				FA903F5D20408A9F00FB3B24 /* CurrencyTableViewCell.swift */,
 				FA903F5E20408A9F00FB3B24 /* CurrencyTableViewCell.xib */,
 				FA903F612040A32200FB3B24 /* LiveRatesTableViewCell.swift */,
@@ -519,7 +519,7 @@
 				FA903F3320406D4F00FB3B24 /* LiveCryptoConverter.xcdatamodeld in Sources */,
 				FA903F5F20408A9F00FB3B24 /* CurrencyTableViewCell.swift in Sources */,
 				FA903F662040A4AD00FB3B24 /* LiveRatesViewController.swift in Sources */,
-				FA903F5C2040724000FB3B24 /* DataSource.swift in Sources */,
+				FA903F5C2040724000FB3B24 /* DefaultCoinDatasource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
